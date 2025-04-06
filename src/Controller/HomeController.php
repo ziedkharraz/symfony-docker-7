@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class HomeController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/',name: 'home_page')]
     public function index(): Response
     {
         $number = random_int(0, 100);
